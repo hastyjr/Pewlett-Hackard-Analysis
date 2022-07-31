@@ -47,11 +47,23 @@ Finally, the above mentioned tables allowed me to retrieve the number of employe
 
 ## Delivering the Employees Eligible for the Mentorship Program
 
-The second deliverable was to provide a list of 
+The second deliverable was to provide a list of eligible employees for the mentorship program. These employees could be considered as replacements as those retirees phase out. 
 
-*
+1st order of business was to create a Mentorship Eligibility table that holds the employees who are eligible to participate in a mentorship program.
 
-*
+* I started out by joining the following tables and ordering them by `emp_no` which happened to be a primary key:
+    * `emp`
+    * `title`
+    * `dept`
+* Additionally, I had to do a filter on `to_date` and `birtdate`, because I only needed to include those within a speficic criterea.
+
+    ```WHERE dept.to_date = '9999-01-01' 
+	    AND (emp.birth_date BETWEEN '1965-01-01' AND '1965-12-31')```
+* In doing this, I then created the `mentorship_eligibility` table oout of the results. 
+
+The results of this criteria are below:
+![]()
+
 
 ## Summary
 
