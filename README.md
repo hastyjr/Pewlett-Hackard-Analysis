@@ -25,6 +25,8 @@ The first deliverable was to understand the county of  employees that fall into 
 
     ```WHERE (emp.birth_date BETWEEN '1952-01-01' AND '1955-12-31')```
 
+![del1_1](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del1_1.png)
+
 * The results of this would create the `retirement_titles` table to use later on.
 
 We noticed there were a lot of duplicates in the results due to the fact that some employees have had more than one role over their time with Pewlett Hackard. So we used the `Dictinct` with `ORDER BY` methods to remove duplicate rows
@@ -33,13 +35,19 @@ We noticed there were a lot of duplicates in the results due to the fact that so
 * Then used the `ORDER BY` to sort by `emp_no`
 * The results of this was turned into a table called `unique_titles`.
 
+![del1_2](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del1_2.png)
+
 Finally, the above mentioned tables allowed me to retrieve the number of employees by their most recent job title who are about to retire.
 
 * I queried the `unique_titles` table and used the `COUNT` method on `emp_no`.
 * Then I used the `ORDER BY`method to
 * The result of this provided the counts of eligible retirees by role.
 
-### Delivering the Employees Eligible for the Mentorship Program
+![del1_3](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del1_3.png)
+
+## Delivering the Employees Eligible for the Mentorship Program
+
+The second deliverable was to provide 
 
 *
 
