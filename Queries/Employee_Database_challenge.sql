@@ -1,4 +1,3 @@
-ctinct with Orderby to remove duplicate rows
 -- Deliverable 1: The Number of Retiring Employees by Title
 SELECT emp.emp_no,
        emp.first_name,
@@ -39,7 +38,7 @@ ORDER BY emp_no DESC;
 SELECT * FROM retiring_titles ORDER BY emp_no DESC;
 
 -- Deliverable 2: The Employees Eligible for the Mentorship Program
--- write a query to create a Mentorship Eligibility table that holds the employees who are eligible to participate in a mentorship program.
+-- create a Mentorship Eligibility table that holds the employees who are eligible to participate in a mentorship program.
 SELECT DISTINCT ON(emp.emp_no) emp.emp_no, 
     emp.first_name, 
     emp.last_name, 
@@ -56,3 +55,10 @@ ON (emp.emp_no = title.emp_no)
 WHERE dept.to_date = '9999-01-01' 
 	AND (emp.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY emp.emp_no;
+
+SELECT * FROM mentorship_eligibilty 
+WHERE to_date = '9999-01-01' 
+	AND birth_date BETWEEN '1965-01-01' AND '1965-12-31'
+ORDER BY emp_no;
+
+
