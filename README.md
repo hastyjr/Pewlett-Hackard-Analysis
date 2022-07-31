@@ -8,7 +8,7 @@ Pewlett Hackard is a large company that has been around for some time that has s
 
 ## Results
 
-To understand how we'll get the retirment and mentorship elibility information, I'll share the databases we started out with and built up over time.
+To understand how I'll get the retirment and mentorship elibility information, I'll share the databases I started out with and built up over time.
 
 Below is an example of the initial `EmployeeDB ERD` entity relationship diagram (ERD)):
 ![employee-db](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/EmployeeDB.png)
@@ -29,9 +29,9 @@ The first deliverable was to understand the county of  employees that fall into 
 
 * The results of this would create the `retirement_titles` table to use later on.
 
-We noticed there were a lot of duplicates in the results due to the fact that some employees have had more than one role over their time with Pewlett Hackard. So we used the `Dictinct` with `ORDER BY` methods to remove duplicate rows
+I noticed there I a lot of duplicates in the results due to the fact that some employees have had more than one role over their time with Pewlett Hackard. So I used the `Dictinct` with `ORDER BY` methods to remove duplicate rows
 
-* We filtered the `emp_no` with the `DISTINCT ON` method
+* I filtered the `emp_no` with the `DISTINCT ON` method
 * Then used the `ORDER BY` to sort by `emp_no`
 * The results of this was turned into a table called `unique_titles`.
 
@@ -47,7 +47,7 @@ Finally, the above mentioned tables allowed me to retrieve the number of employe
 
 ## Delivering the Employees Eligible for the Mentorship Program
 
-The second deliverable was to provide 
+The second deliverable was to provide a list of 
 
 *
 
