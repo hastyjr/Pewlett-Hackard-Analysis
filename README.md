@@ -74,6 +74,6 @@ In Summary, the purpose of this project for Pewlett Hackard was to provide a goo
 ### What does this infromation tell us? 
 When you look back above at the outcomes of Deliverable #1 and Deilverable #2, you will that the amount of eligible retirees is substantially larger than those eligible for the mentorship program. This means, that there are not enough internal and eligible candidates to fill all of these roles. 
 
-![del2_4](del2_4.png)
+![del2_4](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del2_4.png)
 
 Furthermore, this data shows that there will need to be a hiring push to fill the large gaps of open roles within the year. 
