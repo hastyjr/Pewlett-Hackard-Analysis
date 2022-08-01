@@ -63,9 +63,17 @@ The second deliverable was to provide a list of eligible employees for the mento
 * In doing this, I then created the `mentorship_eligibility` table oout of the results. 
 
 The results of this criteria are below:
-![del2_2](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del2_3.png)
+![del2_3](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del2_3.png)
 
 
 # Summary
 
 ### The summary addresses the two questions and contains two additional queries or tables that may provide more insight
+
+In Summary, the purpose of this project for Pewlett Hackard was to provide a good understanding of how many employees are eligible to retire and break that number down by title. This would give management a start on how to understand when and how to fill those roles. Additionally, provided this information, getting a good idea of which emplpyees are elegibly for the mentorship program based off of certain criteria, would show who and how many could potentially fill some of the roles that will open up to due retirees leaving. 
+### What does this infromation tell us? 
+When you look back above at the outcomes of Deliverable #1 and Deilverable #2, you will that the amount of eligible retirees is substantially larger than those eligible for the mentorship program. This means, that there are not enough internal and eligible candidates to fill all of these roles. 
+
+![del2_4](del2_4.png)
+
+Furthermore, this data shows that there will need to be a hiring push to fill the large gaps of open roles within the year. 
