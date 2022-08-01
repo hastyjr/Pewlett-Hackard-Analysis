@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pewlett Hackard is a large company that has been around for some time that has several thousand employees. Some analysis has already been done after creating some employee databases to help managment understand the wave of retirements coming up due to the large amount of baby boomers getting ready for retirement. With all these retirements coming up, they also recognize that this will open up a lot of positions as well. In preparation for filling those positions, they want to figure out which other employees might be able for mentorship to assit in filling these roles. You will see in the below deliverables how many fit within the retirement window and how many will be eligible for the mentorship program.
+Pewlett Hackard is a large company that has been around for some time that has several thousand employees. Some analysis has already been done after creating some employee databases to help managment understand the wave of retirements coming up due to the large amount of baby boomers getting ready for retirement. With all these retirements coming up, they also recognize that this will open up a lot of positions as well. In preparation for filling those positions, they want to figure out which other employees might be able for mentorship to assit in filling these titles. You will see in the below deliverables how many fit within the retirement window and how many will be eligible for the mentorship program.
 ## Results
 
 To understand how I'll get the retirment numbers by title and mentorship elibility information, I'll share the databases I started out with and built up over time.
@@ -12,7 +12,8 @@ Below is an example of the initial `EmployeeDB ERD` entity relationship diagram 
 
 There were several tables in place and adding them to our employee database assisted in further evaluating and analyzing the data accordingly.
 
-## Deilvering the Number of Retiring Employees by Title
+# Deilvering the Number of Retiring Employees by Title
+## Deliverable #1
 
 The first deliverable was to understand the county of  employees that fall into he reitirement criteria and what titles they hold.
 
@@ -26,7 +27,7 @@ The first deliverable was to understand the county of  employees that fall into 
 
 * The results of this would create the `retirement_titles` table to use later on.
 
-I noticed there I a lot of duplicates in the results due to the fact that some employees have had more than one role over their time with Pewlett Hackard. So I used the `Dictinct` with `ORDER BY` methods to remove duplicate rows
+I noticed there I a lot of duplicates in the results due to the fact that some employees have had more than one title over their time with Pewlett Hackard. So I used the `Dictinct` with `ORDER BY` methods to remove duplicate rows
 
 * I filtered the `emp_no` with the `DISTINCT ON` method
 * Then used the `ORDER BY` to sort by `emp_no`
@@ -38,11 +39,12 @@ Finally, the above mentioned tables allowed me to retrieve the number of employe
 
 * I queried the `unique_titles` table and used the `COUNT` method on `emp_no`.
 * Then I used the `ORDER BY`method to
-* The result of this provided the counts of eligible retirees by role.
+* The result of this provided the counts of eligible retirees by title.
 
 ![del1_3](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del1_3.png)
 
-## Delivering the Employees Eligible for the Mentorship Program
+# Delivering the Employees Eligible for the Mentorship Program
+## Deliverable #2
 
 The second deliverable was to provide a list of eligible employees for the mentorship program. These employees could be considered as replacements as those retirees phase out. 
 
@@ -64,6 +66,6 @@ The results of this criteria are below:
 ![del2_2](https://github.com/hastyjr/Pewlett-Hackard-Analysis/blob/main/Resources/del2_3.png)
 
 
-## Summary
+# Summary
 
 ### The summary addresses the two questions and contains two additional queries or tables that may provide more insight
